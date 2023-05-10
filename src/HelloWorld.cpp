@@ -1,16 +1,14 @@
 #include <iostream>
 #include <string>
 
-int
-main()
-{
-  // Запросить имя пользователя
-  std::string name;
-  std::cout << "Введите имя пользователя: ";
-  std::cin >> name;
+int main() {
+    // Ask user's name.
+    std::string name;
+    std::cout << "Enter user name: ";
+    std::cin >> name;
+    
+    // Print greeting.
+    std::cout << "Hello world from @" << name << "!" << std::endl;
 
-  // Вывести приветствие
-  std::cout << "Hello world from @" << name << std::endl;
-
-  return 0;
+    return 0;
 }
